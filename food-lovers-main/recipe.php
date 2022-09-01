@@ -100,18 +100,13 @@
                     id='signup-password'
                     name="password"
                     placeholder="Password" />
-                <input 
-                    type="password"
-                    class="block border border-grey-light w-full p-3 rounded mb-4 font-light"
-                    id='signup-confirm-password'
-                    name="confirm_password"
-                    placeholder="Confirm Password" />
+               	<textarea type='text' maxlength="100" name="description"></textarea>
 
                 <button
                     type="submit"
                     onClick='signupInputHandler()'
                     class="w-full text-center py-3 rounded bg-blue-600 text-white hover:bg-blue-700 focus:outline-none my-1 font-regular"
-                >Create Account</button>
+                >Add Recipe</button>
 
                 <div class="text-center text-sm text-grey-dark mt-4 font-regular">
                     By signing up, you agree to the 
