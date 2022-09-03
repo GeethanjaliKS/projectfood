@@ -25,17 +25,16 @@
                     name="recipe name"
                     placeholder="Recipe name" /> 
 
-                <div class="mb-3">
-                 <label for="" class="form-label"></label>
+             
                  <textarea class="block border  border-grey-light w-full p-3 rounded mb-4 font-light"
                   name="recipe description" id="add recipe"
-                  placeholder="Description"
-                   rows="3" > 
-                    </textarea> 
-                </div>
+                  rows="3"  
+                  placeholder="Description"></textarea>
+             
                  
                <!-- <label for="Ingredient"><span>Ingredients </span></label> -->
-                <textarea name="Ingredients" id="Ingredient" cols="20" rows="5" placeholder="Fill your creativity"></textarea>
+                <textarea class="block border  border-grey-light w-full p-3 rounded mb-4 font-light"
+                 name="Ingredients" id="Ingredient" cols="20" rows="5" placeholder="Fill your creativity"></textarea>
                     
 
                  <input 
