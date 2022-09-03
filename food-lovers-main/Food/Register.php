@@ -14,6 +14,7 @@
 <?php require 'header.php' ?>
 
     <!--Hero Section-->
+    <form method="POST" action="insert/insertUser.php">
 	<div class="bg-grey-lighter min-h-screen flex flex-col">
         <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
             <div class="bg-white px-6 py-8 rounded shadow-md text-black w-full">
@@ -33,8 +34,10 @@
                     placeholder="Email" />
 
                   <input type="tel" 
-                          placeholder="Phone number" />
-                          <br><br>
+                          placeholder="Phone number" 
+                    class="block border border-grey-light w-full p-3 rounded mb-4 font-light"
+                          name="phnum"/>
+                          
 
                 <input 
                     type="password"
@@ -74,9 +77,9 @@
             </div>
         </div>
     </div>
-
-    <script type="text/javascript" src="../scripts/loginHandler.js" ></script>
-    <script type="text/javascript" src="../scripts/signupHandler.js"></script>
+    <!-- <script type="text/javascript" src="../scripts/loginHandler.js" ></script>
+    <script type="text/javascript" src="../scripts/signupHandler.js"></script> -->
+</form>
 
 </body>
 </html>
