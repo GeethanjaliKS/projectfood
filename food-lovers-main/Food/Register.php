@@ -34,9 +34,9 @@
                     placeholder="Email" />
 
                   <input type="tel" 
-                          placeholder="Phone number" 
+                    placeholder="Phone number" 
                     class="block border border-grey-light w-full p-3 rounded mb-4 font-light"
-                          name="phnum"/>
+                    name="phnum"/>
                           
 
                 <input 
