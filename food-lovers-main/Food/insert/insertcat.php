@@ -1,23 +1,13 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "food";
-
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-// Check connection
-if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
-}
-$catlist =  $_REQUEST['category_list'];
-$cattype =  $_REQUEST['category_type'];
-$sql = "INSERT INTO category (category_type,category_list)
-VALUES ('$catlist','$cattype')";
+require 'connection.php';
+$category_name =  $_REQUEST['category_name'];
+$catdesc =  $_REQUEST['desc'];
+$sql = "INSERT INTO categories (category_name,descript)
+VALUES ('$category_name','$catdesc')";
 
 if (mysqli_query($conn, $sql)) {
     echo "<script>
-    alert('User registraion successful');
+    alert('Category added successfully');
     window.location.href='../category.php';
     </script>";
 } else {

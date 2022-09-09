@@ -11,7 +11,10 @@
 </head>
 <body class="bg-blue-50">
 
-   <?php require 'header.php' ?>
+   <?php require 'header.php'; ?>
+ <?php require 'insert/connection.php';?>
+
+
 
     <!--Hero Section-->
     <form method="POST" action="insert/insertrecipe.php">
@@ -32,21 +35,20 @@
                   rows="3"  
                   placeholder="Description"></textarea>
              
+                  <label for="category">Select the Category</label>
+                    <?php
+                     $sql = 'SELECT category_name,descript FROM categories';
+                     $result = $conn->query($sql);
+                     ?>
+                     <select name='category' id='category'>
+                        <?php
+                     while($row = $result->fetch_assoc()) {
+                    echo "<option value='". $row['category_id'] ."'>" .$row['category_name'] ."</option>" ;
+                 }
                  
-               <!-- <label for="Ingredient"><span>Ingredients </span></label> -->
-                <textarea class="block border  border-grey-light w-full p-3 rounded mb-4 font-light"
-                 name="Ingredients" id="Ingredient" cols="20" rows="5" placeholder="Fill your creativity"></textarea>
-                    
-
-                 <input 
-                    type="time"
-                    class="block border border-grey-light w-full p-3 rounded mb-4 font-light"
-                    id='preparation time'
-                    name="time"
-                    placeholder="Preparation time" /> 
-
-                  <img src="" alt="">
-
+                 ?>
+                 </select>
+              <br>
 
                   <label for="myfile">upload image</label>
                    <input type="file" id="myfile" 

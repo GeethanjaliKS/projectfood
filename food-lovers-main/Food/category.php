@@ -13,6 +13,7 @@
 
 <?php require 'header.php' ?>
     <!--Hero Section-->
+    <form action="insert/insertcat.php" method="POST">
 	<div class="bg-grey-lighter min-h-screen flex flex-col">
         <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
             <div class="bg-white px-6 py-8 rounded shadow-md text-black w-full">
@@ -22,16 +23,21 @@
                     type="text"
                     class="block border border-grey-light w-full p-3 rounded mb-4 font-light"
                     id='category'
-                    name="category_list" 
-                    placeholder="Categary-list"/><br>
+                    name="category_name" 
+                    placeholder="Categary-name"/><br>
 
                <textarea class="block border  border-grey-light w-full p-3 rounded mb-4 font-light"
-                  name="category_type" id="category"
+                  name="desc" id="desc"
                   rows="3"  
-                  placeholder="category-type"></textarea>
-
+                  placeholder="Description"></textarea>
+  
+                <button
+                    type="submit"
+                    onClick='signupInputHandler()'
+                    class="w-full text-center py-3 rounded bg-blue-600 text-white hover:bg-blue-700 focus:outline-none my-1 font-regular"
+                >ADD</button>
             
-
+</form>
   <!--  <script type="text/javascript" src="../scripts/loginHandler.js" ></script>
     <script type="text/javascript" src="../scripts/signupHandler.js"></script> -->
 

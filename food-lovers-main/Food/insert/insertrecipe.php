@@ -1,24 +1,14 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "food";
-
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-// Check connection
-if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
-}
+require 'connection.php';
 $recipe_name =  $_REQUEST['recipe_name'];
 $recipe_description =  $_REQUEST['recipe_description'];
-$ingredients =  $_REQUEST['Ingredients'];
-$time =  $_REQUEST['time'];
+$category=$_POST['category'];
+$user_id="1";
 //$image=  $_REQUEST['myfile'];
 //$video =  $_REQUEST['upload'];
 
-$sql = "INSERT INTO recipe (recipename,recipedescription,ingredient,preparationtime)
-VALUES ('$recipe_name','$recipe_description','$ingredients','$time')";
+$sql = "INSERT INTO recipe (recipename,recipedescription,userid,category_id)
+VALUES ('$recipe_name','$recipe_description','$user_id','2')";
 
 if (mysqli_query($conn, $sql)) {
     echo "<script>
