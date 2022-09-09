@@ -23,7 +23,7 @@
                     class="block border border-grey-light w-full p-3 rounded mb-4 font-light"
                     id='category'
                     name="category_list" 
-                    placeholder="Categary-list"/>
+                    placeholder="Categary-list"/><br>
 
                <textarea class="block border  border-grey-light w-full p-3 rounded mb-4 font-light"
                   name="category_type" id="category"
