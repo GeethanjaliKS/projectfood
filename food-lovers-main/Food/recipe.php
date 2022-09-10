@@ -17,7 +17,7 @@
 
 
     <!--Hero Section-->
-    <form method="POST" action="insert/insertrecipe.php">
+    <form method="POST" action="insert/insertrecipe.php" enctype="multipart/form-data">
 	<div class="bg-grey-lighter min-h-screen flex flex-col">
         <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
             <div class="bg-white px-6 py-8 rounded shadow-md text-black w-full">
@@ -37,10 +37,10 @@
              
                   <label for="category">Select the Category</label>
                     <?php
-                     $sql = 'SELECT category_name,descript FROM categories';
+                     $sql = 'SELECT category_id,category_name,descript FROM categories';
                      $result = $conn->query($sql);
                      ?>
-                     <select name='category' id='category'>
+                     <select name='category' id='category' value="">
                         <?php
                      while($row = $result->fetch_assoc()) {
                     echo "<option value='". $row['category_id'] ."'>" .$row['category_name'] ."</option>" ;
@@ -50,19 +50,21 @@
                  </select>
               <br>
 
-                  <label for="myfile">upload image</label>
-                   <input type="file" id="myfile" 
-                         name="myfile" multiple="multiple" /> <br><br>
+                  <!-- <label for="myfile">upload image</label>
+                   <input type="file" id="image" 
+                         name="image" multiple="multiple" /> <br><br> -->
 
                    <label for="file">upload create video</label>
                  <input type="file"   id="file1"   name="upload">      
                 
-
-                <button
+                 <label>Select Image File:</label>
+                <input type="file" name="image"><br/><br/>
+                <input type="submit" name="submit" value="Upload">
+                <!-- <button
                     type="submit"
                     onClick='signupInputHandler()'
                     class="w-full text-center py-3 rounded bg-blue-600 text-white hover:bg-blue-700 focus:outline-none my-1 font-regular"
-                >Add recipe</button>
+                >Add recipe</button> -->
             </div>
         </div>
     </div>
