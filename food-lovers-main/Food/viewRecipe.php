@@ -9,6 +9,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <title>Recipe</title>
     <!-- CSS only -->
+    <link rel="stylesheet" href="style.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 <body>
@@ -33,7 +34,7 @@
                 <h5 class="card-title"><?php echo $row['recipename'] ?></h5><hr />
                 <p class="card-text"><?php echo $row['recipedescription'] ?></p>
                 <p class="card-text"><?php echo $row['username'] ?></p>
-                <a href="#" class="btn btn-secondary">View More</a>
+                <a href="#" class="btn btn-primary">View More</a>
             </div>
             </div>
     </div>
