@@ -16,7 +16,7 @@
 <?php require 'header.php'; ?>
 <?php require 'insert/connection.php';?>
 <?php
-    $sql = 'SELECT recipename,recipedescription,img,register.username,category_id FROM recipe JOIN register ON recipe.userid=register.userid';
+    $sql = 'SELECT recipe_id,recipename,recipedescription,uploadedtime,img,register.username,category_id FROM recipe JOIN register ON recipe.userid=register.userid';
     $result = $conn->query($sql);
 ?>  
     <div class="conatiner">
@@ -32,9 +32,13 @@
     <img class="card-img-top" style="height:300px" src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['img']); ?>" /> 
             <div class="card-body">
                 <h5 class="card-title"><?php echo $row['recipename'] ?></h5><hr />
-                <p class="card-text"><?php echo $row['recipedescription'] ?></p>
-                <p class="card-text"><?php echo $row['username'] ?></p>
-                <a href="#" class="btn btn-primary">View More</a>
+                <p class="card-text">Creator : <?php echo $row['username'] ?>
+            <br> <?php echo $row['uploadedtime'] ?>
+            </p><?php
+            $id=$row['recipe_id'];
+            echo $id;
+            echo '<a href="recipeDetails.php?id=$id">Link 1</a>'; ?>
+                <a href="recipeDetails.php?id=<?php echo $row['recipe_id']?>" class="btn btn-primary">View More</a>
             </div>
             </div>
     </div>
