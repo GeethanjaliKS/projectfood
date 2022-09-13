@@ -54,8 +54,8 @@
                    <input type="file" id="image" 
                          name="image" multiple="multiple" /> <br><br> -->
 
-                   <label for="file">upload create video</label>
-                 <input type="file"   id="file1"   name="upload">      
+                   <!-- <label for="file">upload create video</label> -->
+                 <!-- <input type="file"   id="file1"   name="upload">       -->
                 
                  <label>Select Image File:</label>
                 <input type="file" name="image"><br/><br/>

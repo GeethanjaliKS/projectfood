@@ -13,8 +13,8 @@
 					</div>
 					<!-- Secondary Navbar items -->
 					<div class="hidden md:flex items-center space-x-3 ">
-                        <a href="home.html" class="py-4 px-2 text-base font-regular primary-color">Home</a>
-						<a href="contact.html" class="py-4 px-2 text-base font-regular primary-color">Contact Us</a>
+                        <a href="home.php" class="py-4 px-2 text-base font-regular primary-color">Home</a>
+						<a href="viewRecipe.php " class="py-4 px-2 text-base font-regular primary-color">View Recipe</a>
 						<a id="nav-profile-img" href="profile.html" class="none md:visible"><img id="nav-profile-img-icon" class="h-9 w-9 rounded-full object-cover items-center justify-content" src='../assets/images/default-profile.jpeg' /></a>
 						<a id="nav-login-btn" href="login.html" class="py-2 px-2 text-base font-regular primary-color">Log In</a>
 						<a id="nav-signup-btn" href="signup.html">

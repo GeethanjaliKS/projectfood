@@ -9,7 +9,8 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <title>Recipe</title>
     <!-- CSS only -->
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- Bootstrap here -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 <body>
@@ -20,7 +21,7 @@
     $result = $conn->query($sql);
 ?>  
     <div class="conatiner">
-    <div class="row" style="padding:10px" >
+    <div class="row" style="padding:50px" >
   
         <?php
     while($row = $result->fetch_assoc()) { 
@@ -28,7 +29,7 @@
         // $sql = "SELECT username FROM register where userid='$usr'";
         ?>
     <div class="col-md-4 col-lg-3" style="padding:10px">
-    <div class="card" >
+    <div class="card shadow-lg p-3 mb-5 bg-white rounded" >
     <img class="card-img-top" style="height:300px" src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['img']); ?>" /> 
             <div class="card-body">
                 <h5 class="card-title"><?php echo $row['recipename'] ?></h5><hr />
@@ -37,7 +38,9 @@
             </p><?php
             $id=$row['recipe_id'];
             echo $id;
-            echo '<a href="recipeDetails.php?id=31" class="btn btn-primary" >View More</a>'; ?>      
+            echo '<a href="recipeDetails.php?id=31" class="btn btn-primary" >View More</a>'; ?> 
+            
+            
             </div>
             </div>
     </div>
