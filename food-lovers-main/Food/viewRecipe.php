@@ -38,7 +38,8 @@
             </p><?php
             $id=$row['recipe_id'];
             echo $id;
-            echo '<a href="recipeDetails.php?id=31" class="btn btn-primary" >View More</a>'; ?> 
+            ?>
+        <a href="recipeDetails.php?id=<?php echo $id?>" class="btn btn-primary" >View More</a>
             
             
             </div>
