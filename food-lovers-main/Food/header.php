@@ -28,11 +28,9 @@ h1{
 					<!-- Secondary Navbar items -->
 					<div class="hidden md:flex items-center space-x-3 ">
                         <a href="home.php" class="py-4 px-2 text-base font-regular primary-color">Home</a>
-						<a href="viewRecipe.php " class="py-4 px-2 text-base font-regular primary-color">View Recipe</a>
-						<a href="recipe.php " class="py-4 px-2 text-base font-regular primary-color">Add Recipe</a>
-					  <!--	<a id="nav-profile-img" href="profile.html" class="none md:visible"><img id="nav-profile-img-icon" class="h-9 w-9 rounded-full object-cover items-center justify-content" src='../assets/images/default-profile.jpeg' /></a> -->
-					 
-					 <?php if(isset($_SESSION['user'])) {
+						<?php if(isset($_SESSION['user'])) {
+						echo '<a href="viewRecipe.php " class="py-4 px-2 text-base font-regular primary-color">View Recipe</a>';
+						echo '<a href="recipe.php " class="py-4 px-2 text-base font-regular primary-color">Add Recipe</a>';
 					  echo '<a id="nav-login-btn" href="logout.php" class="py-2 px-2 text-base font-regular primary-color">Log Out</a>';
 					  }
 					  else{
