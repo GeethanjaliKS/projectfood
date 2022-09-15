@@ -36,9 +36,9 @@
 		    </div>
 			<div class="flex mx-auto md:mx-40 mt-6 justify-center flex-wrap gap-6">
 			  <a href="#search-dish-call">
-			  <button type="button" class="bg-blue-600 hover:bg-blue-700 text-white text-xl font-regular py-2 px-4 rounded transition duration-500 ease-in-out bg-blue-600 hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110 ...">
+			<!--  <button type="button" class="bg-blue-600 hover:bg-blue-700 text-white text-xl font-regular py-2 px-4 rounded transition duration-500 ease-in-out bg-blue-600 hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110 ...">
 				Browse Dish
-			  </button>
+			  </button> -->
 			</a>
 			</div>
 		  </div>
@@ -68,17 +68,16 @@
 	  </section>
 
 	  <!--Browse Dish Section-->
-	  <section class="relative md:m-10">
+	 <!-- <!-- <section class="relative md:m-10">
 		  <div id="search-dish-call" class="font-medium text-2xl md:text-4xl text-center mb-6">Search Your Favorite Dish</div>
 		  <div class="bg-white p-3 shadow-sm rounded-sm">
 			  <!--Search bar-->
-			  <div class="border rounded overflow-hidden flex mb-4">
+			<!--  <div class="border rounded overflow-hidden flex mb-4">
 				<input id="home-dish-search-bar" type="text" class="w-11/12 px-4 py-2 border-gray-300 focus:ring-blue-600 font-regular" placeholder="What are you looking for?">
 				<button class="flex w-1/12 items-center justify-center md:px-4 border-l">
 				  <svg class="h-4 w-4 text-grey-dark" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/></svg>
 				</button>
-			  </div>
-
+			  </div> 
 			  <!--Recent Posts-->
 			  <p id="home-no-posts" class="hidden text-center my-4 text-sm font-medium text-gray-400">No Dishes Found</p>
 			  <div id="home-posts" class="grid grid-cols-1 md:grid-cols-4 gap-3">

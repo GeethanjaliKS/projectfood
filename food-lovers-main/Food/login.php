@@ -33,6 +33,11 @@
                     name="password"
                     placeholder="Password" />
 
+                    <div id="highlighted" class="hl-basic hidden-xs">
+  
+    
+
+    
                 <button
                     type="submit"
 					onClick="loginInputHandler()"

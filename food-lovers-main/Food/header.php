@@ -7,15 +7,26 @@
 						<div>
 							<!-- Website Logo -->
 							<a href="#" class="flex items-center py-4 px-2">
-								<img src="../assets/images/logo-display.svg" alt="Logo">
+								<!--<img src="../assets/images/logo-display.svg" alt="Logo"> -->
+								<h1>PAAKVIDHI</h1>
 							</a>
+							<link rel="stylesheet" href="style.css">
+							
+							<style>
+h1{
+  font-family: 'Trade Winds';
+  color:#1E90FF;
+  font-size: 50px;
+}
+  </style>
 						</div>
 					</div>
 					<!-- Secondary Navbar items -->
 					<div class="hidden md:flex items-center space-x-3 ">
                         <a href="home.php" class="py-4 px-2 text-base font-regular primary-color">Home</a>
 						<a href="viewRecipe.php " class="py-4 px-2 text-base font-regular primary-color">View Recipe</a>
-						<a id="nav-profile-img" href="profile.html" class="none md:visible"><img id="nav-profile-img-icon" class="h-9 w-9 rounded-full object-cover items-center justify-content" src='../assets/images/default-profile.jpeg' /></a>
+						<a href="recipe.php " class="py-4 px-2 text-base font-regular primary-color">Add Recipe</a>
+					  <!--	<a id="nav-profile-img" href="profile.html" class="none md:visible"><img id="nav-profile-img-icon" class="h-9 w-9 rounded-full object-cover items-center justify-content" src='../assets/images/default-profile.jpeg' /></a> -->
 						<a id="nav-login-btn" href="login.php" class="py-2 px-2 text-base font-regular primary-color">Log In</a>
 						<a id="nav-signup-btn" href="Register.php">
 						<button class="bg-blue-600 hover:bg-blue-700 text-white text-base font-regular py-2 px-4 rounded">

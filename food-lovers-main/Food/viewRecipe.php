@@ -17,7 +17,7 @@
 <?php require 'header.php'; ?>
 <?php require 'insert/connection.php';?>
 <?php
-    $sql = 'SELECT recipe_id,recipename,recipedescription,uploadedtime,img,register.username,category_id FROM recipe JOIN register ON recipe.userid=register.userid';
+    $sql = 'SELECT recipe_id,recipename,recipedescription,ingredients,uploadedtime,img,register.username,category_id FROM recipe JOIN register ON recipe.userid=register.userid';
     $result = $conn->query($sql);
 ?>  
     <div class="conatiner">

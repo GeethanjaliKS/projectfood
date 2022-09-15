@@ -42,11 +42,12 @@ if(isset($_POST["submit"])){
             $recipe_name =  $_POST['recipe_name'];
             $category=$_POST['category'];
             $recipe_description =  $_POST['recipe_description'];
+            $ingredient =  $_POST['Ingredients'];
             // Insert image content into database 
             $user_id="1";
    
-            $sql="INSERT INTO recipe (recipename,recipedescription,img,userid,category_id)
-            VALUES ('$recipe_name','$recipe_description','$imgContent','$user_id','$category')"; 
+            $sql="INSERT INTO recipe (recipename,recipedescription,ingredients,img,userid,category_id)
+            VALUES ('$recipe_name','$recipe_description','$ingredient','$imgContent','$user_id','$category')"; 
              
             if(mysqli_query($conn, $sql)){ 
                 $status = 'success'; 
