@@ -1,3 +1,7 @@
+<?php
+// Start the session
+session_start();
+?>
  <!-- Header Navigation Section -->
  <header>
         <nav class="bg-white shadow-lg fadeInTop">
@@ -27,7 +31,13 @@ h1{
 						<a href="viewRecipe.php " class="py-4 px-2 text-base font-regular primary-color">View Recipe</a>
 						<a href="recipe.php " class="py-4 px-2 text-base font-regular primary-color">Add Recipe</a>
 					  <!--	<a id="nav-profile-img" href="profile.html" class="none md:visible"><img id="nav-profile-img-icon" class="h-9 w-9 rounded-full object-cover items-center justify-content" src='../assets/images/default-profile.jpeg' /></a> -->
-						<a id="nav-login-btn" href="login.php" class="py-2 px-2 text-base font-regular primary-color">Log In</a>
+					 
+					 <?php if(isset($_SESSION['user'])) {
+					  echo '<a id="nav-login-btn" href="logout.php" class="py-2 px-2 text-base font-regular primary-color">Log Out</a>';
+					  }
+					  else{
+						echo '<a id="nav-login-btn" href="login.php" class="py-2 px-2 text-base font-regular primary-color">Log In</a>';
+					} ?>
 						<a id="nav-signup-btn" href="Register.php">
 						<button class="bg-blue-600 hover:bg-blue-700 text-white text-base font-regular py-2 px-4 rounded">
                             Sign Up
