@@ -12,12 +12,17 @@
     <!-- <link rel="stylesheet" href="style.css"> -->
     <!-- Bootstrap here -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<style>
+    .c{
+        background-image: linear-gradient(to right top, #370537, #41366e, #3864a2, #1795cd, #12c6eb);   
+    }
+</style>
 </head>
-<body>
+<body class="c">
 <?php require 'header.php'; ?>
 <?php require 'insert/connection.php';?>
 <?php
-    $sql = 'SELECT recipe_id,recipename,recipedescription,ingredients,uploadedtime,img,register.username,category_id FROM recipe JOIN register ON recipe.userid=register.userid';
+    $sql = 'SELECT recipe_id,recipename,recipedescription,Ingredients,uploadedtime,img,register.username,category_id FROM recipe JOIN register ON recipe.userid=register.userid';
     $result = $conn->query($sql);
 ?>  
     <div class="conatiner">

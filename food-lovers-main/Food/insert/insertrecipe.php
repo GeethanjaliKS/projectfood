@@ -1,3 +1,7 @@
+<?php
+// Start the session
+session_start();
+?>
 <!-- 
 require 'connection.php';
 $recipe_name =  $_REQUEST['recipe_name'];
@@ -44,7 +48,7 @@ if(isset($_POST["submit"])){
             $recipe_description =  $_POST['recipe_description'];
             $ingredient =  $_POST['Ingredients'];
             // Insert image content into database 
-            $user_id="1";
+            $user_id=$_SESSION["user"];
    
             $sql="INSERT INTO recipe (recipename,recipedescription,ingredients,img,userid,category_id)
             VALUES ('$recipe_name','$recipe_description','$ingredient','$imgContent','$user_id','$category')"; 

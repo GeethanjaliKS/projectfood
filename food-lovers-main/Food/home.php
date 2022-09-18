@@ -111,9 +111,9 @@
 				</a>
 			   
 			</div>
-			<p class="mt-8 text-base leading-6 text-center text-gray-50">
+			<!--<p class="mt-8 text-base leading-6 text-center text-gray-50">
 				© 2021 FoodLovers, Inc. All rights reserved.
-			</p>
+			</p> -->
 		
 	</section>
 

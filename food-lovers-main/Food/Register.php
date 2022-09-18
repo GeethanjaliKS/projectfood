@@ -8,14 +8,39 @@
   <link href="../styles/main.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-</head>
-<body class="bg-blue-50">
+         <style>
+            .r{
+                padding-top: 100px;
+                padding-bottom: 200px;
+                 border: 100px;
 
+            }
+            
+           .bg-white{
+            opacity: 2.5;
+            box-shadow: 500px;
+            border: 5px;
+            
+           } 
+            .c{
+                background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+            }
+            
+            
+            
+         </style>
+</head>
+          
+<body class="c">
 <?php require 'header.php' ?>
 
     <!--Hero Section-->
     <form method="POST" action="insert/insertUser.php">
+        <div class="r">
+     
+           
 	<div class="bg-grey-lighter min-h-screen flex flex-col">
+        
         <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
             <div class="bg-white px-6 py-8 rounded shadow-md text-black w-full">
                 <h1 class="mb-8 text-3xl text-center font-medium text-blue-600">Sign-up</h1>
@@ -76,7 +101,7 @@
                 </a>.
             </div>
         </div>
-    </div>
+    </div></div></div> </div>
     <!-- <script type="text/javascript" src="../scripts/loginHandler.js" ></script>
     <script type="text/javascript" src="../scripts/signupHandler.js"></script> -->
 </form>

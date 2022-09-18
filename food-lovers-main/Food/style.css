@@ -7,3 +7,9 @@
     background-attachment: fixed;
     background-size: cover;
 }  */
+
+
+.f{
+        box-sizing: border-box;
+        box-shadow: azure;
+}

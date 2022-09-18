@@ -10,10 +10,10 @@ session_start();
 					<div class="flex space-x-7">
 						<div>
 							<!-- Website Logo -->
-							<a href="#" class="flex items-center py-4 px-2">
-								<!--<img src="../assets/images/logo-display.svg" alt="Logo"> -->
+						<!--<a href="#" class="flex items-center py-4 px-2">
+								<<img src="../assets/images/logo-display.svg" alt="Logo"> -->
 								<h1>PAAKVIDHI</h1>
-							</a>
+							
 							<link rel="stylesheet" href="style.css">
 							
 							<style>
@@ -28,7 +28,11 @@ h1{
 					<!-- Secondary Navbar items -->
 					<div class="hidden md:flex items-center space-x-3 ">
                         <a href="home.php" class="py-4 px-2 text-base font-regular primary-color">Home</a>
+						
 						<?php if(isset($_SESSION['user'])) {
+							if($_SESSION['role']=="admin"){
+								echo '<a href="category.php " class="py-4 px-2 text-base font-regular primary-color">add category</a>';	
+							}
 						echo '<a href="viewRecipe.php " class="py-4 px-2 text-base font-regular primary-color">View Recipe</a>';
 						echo '<a href="recipe.php " class="py-4 px-2 text-base font-regular primary-color">Add Recipe</a>';
 					  echo '<a id="nav-login-btn" href="logout.php" class="py-2 px-2 text-base font-regular primary-color">Log Out</a>';
@@ -36,11 +40,18 @@ h1{
 					  else{
 						echo '<a id="nav-login-btn" href="login.php" class="py-2 px-2 text-base font-regular primary-color">Log In</a>';
 					} ?>
+					
 						<a id="nav-signup-btn" href="Register.php">
 						<button class="bg-blue-600 hover:bg-blue-700 text-white text-base font-regular py-2 px-4 rounded">
                             Sign Up
                         </button>
+						
 						</a>
+					
+					<!--	<button class="bg-blue-600 hover:bg-blue-700 text-white text-base font-regular py-2 px-4 rounded">
+                            Admin
+                        </button> -->
+						
 					</div>
 					<!-- Mobile menu button -->
 					<div class="md:hidden flex items-center">
@@ -68,6 +79,7 @@ h1{
 					<li><a href="contact.html" class="block text-sm px-2 py-4 hover:bg-blue-600 transition duration-300 text-base font-regular">Contact Us</a></li>
 					<li id="nav-login-btn-mobile"><a href="login.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300 text-base font-regular">Log In</a></li>
 					<li class="active" id="nav-signup-btn-mobile"><a href="signup.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300 text-base font-regular">Sign Up</a></li>
+                   <!-- <li class="active" id="nav-signup-btn-mobile"><a href="signup.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300 text-base font-regular">admin</a></li>		-->		
 				</ul>
 			</div>
 			<script>
