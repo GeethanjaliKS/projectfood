@@ -61,7 +61,7 @@ if(isset($_POST["submit"])){
                 window.location.href='../recipe.php';
                 </script>";
             }else{ 
-                $statusMsg = "File upload failed, please try again."; 
+                $statusMsg = 'File upload failed, please try again'; 
             }  
         }else{ 
             $statusMsg = 'Sorry, only JPG, JPEG, PNG, & GIF files are allowed to upload.'; 

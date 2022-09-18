@@ -8,8 +8,13 @@
   <link href="../styles/main.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<style>
+  .c{
+    background-image: linear-gradient(to right top, #6bd1bf, #80d2ae, #98d29e, #b0d191, #c8ce88, #dac57a, #edba73, #ffad74, #ff937a, #ff7892, #ff62b8, #fb5fe7);
+  }
+</style>
 </head>
-<body class="bg-blue-50">
+<body class="c">
 
 <?php require 'header.php' ?>
     <!--Hero Section-->
