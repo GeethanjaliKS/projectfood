@@ -32,6 +32,7 @@ h1{
 						<?php if(isset($_SESSION['user'])) {
 							if($_SESSION['role']=="admin"){
 								echo '<a href="category.php " class="py-4 px-2 text-base font-regular primary-color">add category</a>';	
+								echo '<a id="nav-login-btn" href="table.php" class="py-2 px-2 text-base font-regular primary-color">View Users</a>';
 							}
 						echo '<a href="viewRecipe.php " class="py-4 px-2 text-base font-regular primary-color">View Recipe</a>';
 						echo '<a href="recipe.php " class="py-4 px-2 text-base font-regular primary-color">Add Recipe</a>';
@@ -39,7 +40,7 @@ h1{
 					  }
 					  else{
 						echo '<a id="nav-login-btn" href="login.php" class="py-2 px-2 text-base font-regular primary-color">Log In</a>';
-					} ?>
+					?>
 					
 						<a id="nav-signup-btn" href="Register.php">
 						<button class="bg-blue-600 hover:bg-blue-700 text-white text-base font-regular py-2 px-4 rounded">
@@ -47,6 +48,7 @@ h1{
                         </button>
 						
 						</a>
+						<?php } ?>
 					
 					<!--	<button class="bg-blue-600 hover:bg-blue-700 text-white text-base font-regular py-2 px-4 rounded">
                             Admin
