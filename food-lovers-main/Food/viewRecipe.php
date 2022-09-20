@@ -42,10 +42,11 @@
             <br> <?php echo $row['uploadedtime'] ?>
             </p><?php
             $id=$row['recipe_id'];
-            echo $id;
             ?>
         <a href="recipeDetails.php?id=<?php echo $id?>" class="btn btn-primary" >View More</a>
-            
+        <?php if($_SESSION['role']=="admin"){ ?>
+        <a href="removeRecipe.php?id=<?php echo $id?>" class="btn btn-danger" >Delete</a>
+          <?php } ?>  
             
             </div>
             </div>
