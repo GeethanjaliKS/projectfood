@@ -19,7 +19,10 @@ if ($row) {
     window.location.href='home.php';
     </script>";
 } else {
-  echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+  echo "<script>
+  alert('Login not successful');
+  window.location.href='login.php';
+  </script>";
 }
 ?>
 

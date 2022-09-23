@@ -96,7 +96,7 @@
 
             <div class="text-grey-dark mt-6 font-regular">
                 Already have an account? 
-                <a class="no-underline border-b border-blue text-blue-600" href="login.html">
+                <a class="no-underline border-b border-blue text-blue-600" href="login.php">
                     Log in
                 </a>.
             </div>

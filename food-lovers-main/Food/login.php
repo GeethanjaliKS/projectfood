@@ -7,13 +7,15 @@
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   <link href="../styles/main.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
    <style>
     .bg-violet-300{
         background-color: rgb(196 181 253);
     }
     .py-0{
-                padding-top:100px;
+                padding-top:200px;
                 padding-bottom: 100px;
             }
     
@@ -31,7 +33,8 @@
     <!--Login Section-->
   
     <form  action="checklogin.php" method="post">
-    <div class="py-0">
+        <center>
+    <div class="py-0 col-md-4">
         
         <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
             <div class="bg-white px-6 py-8 rounded shadow-md text-black w-full">
@@ -56,16 +59,17 @@
                  </div> -->
                  <input class="btn btn-primary" type="submit" value="submit"> 
            
-            <div class="text-grey-dark mt-6 font-regular">
+            <div>
                 Don't have an account? 
-                <a class="no-underline border-b border-blue text-blue-600" href="Register.php">
+                <a class="no-underline border-b border-blue text-blue-600 btn" href="Register.php">
                     Sign up
-                </a>.
+                </a>
             </div>
         </div> </div> </div>
+        </center>
 </form>
 </div>
 	<!-- <script type="text/javascript" src="../scripts/loginHandler.js" ></script> -->
-    </div>
+        </div>
 </body>
 </html>

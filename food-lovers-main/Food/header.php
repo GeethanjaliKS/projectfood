@@ -27,19 +27,19 @@ h1{
 					</div>
 					<!-- Secondary Navbar items -->
 					<div class="hidden md:flex items-center space-x-3 ">
-                        <a href="home.php" class="py-4 px-2 text-base font-regular primary-color">Home</a>
+                        <a href="home.php" class="py-4 px-2 text-base font-regular primary-color" style="text-decoration: none;">Home</a>
 						
 						<?php if(isset($_SESSION['user'])) {
 							if($_SESSION['role']=="admin"){
-								echo '<a href="category.php " class="py-4 px-2 text-base font-regular primary-color">add category</a>';	
-								echo '<a id="nav-login-btn" href="table.php" class="py-2 px-2 text-base font-regular primary-color">View Users</a>';
+								echo '<a href="category.php " class="py-4 px-2 text-base font-regular primary-color" style="text-decoration: none;">add category</a>';	
+								echo '<a id="nav-login-btn" href="table.php" class="py-2 px-2 text-base font-regular primary-color" style="text-decoration: none;">View Users</a>';
 							}
-						echo '<a href="viewRecipe.php " class="py-4 px-2 text-base font-regular primary-color">View Recipe</a>';
-						echo '<a href="recipe.php " class="py-4 px-2 text-base font-regular primary-color">Add Recipe</a>';
-					  echo '<a id="nav-login-btn" href="logout.php" class="py-2 px-2 text-base font-regular primary-color">Log Out</a>';
+						echo '<a href="viewRecipe.php " class="py-4 px-2 text-base font-regular primary-color" style="text-decoration: none;">View Recipe</a>';
+						echo '<a href="recipe.php " class="py-4 px-2 text-base font-regular primary-color" style="text-decoration: none;">Add Recipe</a>';
+					  echo '<a id="nav-login-btn" href="logout.php" class="py-2 px-2 text-base font-regular primary-color" style="text-decoration: none;">Log Out</a>';
 					  }
 					  else{
-						echo '<a id="nav-login-btn" href="login.php" class="py-2 px-2 text-base font-regular primary-color">Log In</a>';
+						echo '<a id="nav-login-btn" href="login.php" class="py-2 px-2 text-base font-regular primary-color" style="text-decoration: none;">Log In</a>';
 					?>
 					
 						<a id="nav-signup-btn" href="Register.php">
