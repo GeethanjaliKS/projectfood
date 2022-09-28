@@ -1,9 +1,8 @@
 <?php
 require 'connection.php';
 $category_name =  $_REQUEST['category_name'];
- $catdesc =  $_REQUEST['desc'];
-$sql = "INSERT INTO categories (category_name,descript)
-VALUES ('$category_name','$catdesc')";
+$sql = "INSERT INTO categories (category_name)
+VALUES ('$category_name')";
 
 if (mysqli_query($conn, $sql)) {
     echo "<script>
