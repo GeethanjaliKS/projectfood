@@ -31,7 +31,7 @@ h1{
 						
 						<?php if(isset($_SESSION['user'])) {
 							if($_SESSION['role']=="admin"){
-								echo '<a href="category.php " class="py-4 px-2 text-base font-regular primary-color" style="text-decoration: none;">add category</a>';	
+								echo '<a href="category.php " class="py-4 px-2 text-base font-regular primary-color" style="text-decoration: none;">Add category</a>';	
 								echo '<a id="nav-login-btn" href="table.php" class="py-2 px-2 text-base font-regular primary-color" style="text-decoration: none;">View Users</a>';
 							}
 						echo '<a href="viewRecipe.php " class="py-4 px-2 text-base font-regular primary-color" style="text-decoration: none;">View Recipe</a>';

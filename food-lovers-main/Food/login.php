@@ -18,6 +18,12 @@
                 padding-top:200px;
                 padding-bottom: 100px;
             }
+
+    #c{
+
+        padding-top: 150px;
+        padding-bottom:100px;
+    }        
     
 
   </style>
@@ -35,7 +41,7 @@
     <form  action="checklogin.php" method="post">
         <center>
     <div class="py-0 col-md-4">
-        
+        <div id="c">
         <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
             <div class="bg-white px-6 py-8 rounded shadow-md text-black w-full">
                 <h1 class="mb-8 text-3xl text-center font-medium text-blue-600">Log In</h1>
@@ -65,7 +71,7 @@
                     Sign up
                 </a>
             </div>
-        </div> </div> </div>
+        </div> </div> </div> </div>
         </center>
 </form>
 </div>

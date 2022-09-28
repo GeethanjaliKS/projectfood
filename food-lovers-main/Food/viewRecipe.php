@@ -42,10 +42,6 @@
             <br> <?php echo $row['uploadedtime'] ?>
             </p><?php
             $id=$row['recipe_id'];
-<<<<<<< Updated upstream
-=======
-            //echo $id;
->>>>>>> Stashed changes
             ?>
         <a href="recipeDetails.php?id=<?php echo $id?>" class="btn btn-primary" >View More</a>
         <?php if($_SESSION['role']=="admin"){ ?>

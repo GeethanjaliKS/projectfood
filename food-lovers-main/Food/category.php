@@ -31,10 +31,10 @@
                     name="category_name" 
                     placeholder="Categary-name"/><br>
 
-               <textarea class="block border  border-grey-light w-full p-3 rounded mb-4 font-light"
+            <!--   <textarea class="block border  border-grey-light w-full p-3 rounded mb-4 font-light"
                   name="desc" id="desc"
                   rows="3"  
-                  placeholder="Description"></textarea>
+                  placeholder="Description"></textarea> -->
   
                 <button
                     type="submit"
